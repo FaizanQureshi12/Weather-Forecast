@@ -1,0 +1,66 @@
+        body {
+            background: url('https://source.unsplash.com/1600x900/?Weather');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .forcastDiv {
+            width: 100%;
+            display: flex;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+
+        }
+
+        /* window.scrollTo(0, document.body.scrollHeight);
+        .forcastDiv::-webkit-scrollbar {
+                       Chrome
+        } */
+
+        .forcastDiv>.forcastCard {
+            /* https://hype4.academy/tools/glassmorphism-generator */
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+
+            display: flex;
+            /* width: 1200px; not working */
+            margin: 20px;
+            padding: 20px 60px 20px 60px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .forcastDiv>.forcastCard>.day {
+            font-size: 24px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 5px 10px 5px 10px;
+            font-family: sans-serif;
+            color: rgba(0, 0, 0, 0.593);
+        }
+
+        input {
+            width: 250px;
+            height: 25px;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: rgba(21, 172, 117, 0.773);
+            color: aliceblue;
+            width: 50px;
+            height: 25px;
+            font-size: large;
+            border-radius: 7px;
+            box-shadow: 5px 6px 8px black;
+        }
